@@ -2,11 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>KuninganWonders</title>
+    <title>IndoWonders</title>
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
     />
+    <link rel="icon" href="assets/img/logo/logo.png" />
 
     <!-- SWIPER MIN.CSS -->
     <link rel="stylesheet" href="assets/js/swiper.min.js" />
@@ -45,27 +46,12 @@
                 <main class="flex items-center justify-between w-full">
                   <!-- Logo and Title -->
                   <div class="flex items-center text-white space-x-2">
-                    <svg
-                      class="w-6 h-6"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
-                      ></path>
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
-                      ></path>
-                    </svg>
-                    <h1 class="text-2xl font-semibold">KuninganWonders</h1>
+                    <img
+                      class="w-14 h-8"
+                      src="assets/img/logo/logowhite1.png"
+                      alt=""
+                    />
+                    <h1 class="text-2xl font-semibold">IndoWonders</h1>
                   </div>
 
                   <!-- Buttons -->
@@ -122,7 +108,7 @@
                   <h1
                     class="text-5xl sm:text-7xl lg:text-8xl font-extrabold tracking-wider bg-clip-text text-transparent bg-gradient-to-b from-gray-200"
                   >
-                    KuninganWonders
+                    IndoWonders
                   </h1>
                   <p
                     class="text-lg sm:text-xl text-gray-300 max-w-lg font-medium mt-5 mx-auto"
@@ -146,7 +132,7 @@
     </div>
 
     <!-- Category Section -->
-    <section class="bg-gray-900 py-8 px-4 mb-20 px-20">
+    <section class="bg-gray-900 py-8 mb-20 px-20 container mx-auto">
       <div
         class="absolute inset-0 bg-gradient-to-t from-gray-900 via-transparent to-transparent opacity-100"
       ></div>
@@ -156,9 +142,7 @@
         <h2 class="text-lg font-semibold text-gray-100">
           Confusion? These Recommendations
         </h2>
-        <h1 class="text-3xl font-bold text-white mt-2">
-          Destinations Recommendations
-        </h1>
+        <h1 class="text-3xl font-bold text-white mt-2">Kategori Pilihan</h1>
       </div>
 
       <!-- Wrapper Grid -->
@@ -166,11 +150,11 @@
         <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
           <!-- Card 1 -->
           <div
-            class="group relative cursor-pointer overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30"
+            class="group relative rounded-md cursor-pointer overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30"
           >
             <div class="h-[450px] w-full sm:w-80">
               <img
-                class="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-105"
+                class="h-full w-full object-cover transition-transform duration-500"
                 src="assets/img/beach.jpg"
                 alt="Wisata Alam"
               />
@@ -203,11 +187,11 @@
 
           <!-- Card 2 -->
           <div
-            class="group relative cursor-pointer overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30"
+            class="group relative cursor-pointer rounded-md overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30"
           >
             <div class="h-[450px] w-full sm:w-80">
               <img
-                class="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-105"
+                class="h-full w-full object-cover transition-transform duration-500"
                 src="assets/img/gallery/5.jpg"
                 alt="Wisata Alam"
               />
@@ -240,11 +224,11 @@
 
           <!-- Card 3 -->
           <div
-            class="group relative cursor-pointer overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30"
+            class="group relative cursor-pointer rounded-md overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30"
           >
             <div class="h-[450px] w-full sm:w-80">
               <img
-                class="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-105"
+                class="h-full w-full object-cover transition-transform duration-500"
                 src="assets/img/gallery/9.jpg"
                 alt="Wisata Alam"
               />
@@ -276,11 +260,11 @@
           </div>
           <!-- Card 4 -->
           <div
-            class="group relative cursor-pointer overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30"
+            class="group relative cursor-pointer rounded-md overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30"
           >
             <div class="h-[450px] w-full sm:w-80">
               <img
-                class="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-105"
+                class="h-full w-full object-cover transition-transform duration-500"
                 src="assets/img/tea-plant.jpg"
                 alt="Wisata Alam"
               />
@@ -313,22 +297,23 @@
         </div>
       </div>
       <div class="flex justify-center mt-8">
-        <button
+        <a
+          href="kategori.html"
           class="flex items-center gap-3 rounded-lg bg-[#0DCDC2] px-4 py-2 text-sm font-medium text-center text-white shadow-md transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-lg"
         >
           Lihat Kategori Lainnya
           <i class="fas fa-arrow-right"></i>
-        </button>
+        </a>
       </div>
     </section>
 
     <!-- Blog -->
-    <section class="mx-auto py-10 px-20 mb-20 bg-gray-900">
+    <section class="py-10 px-20 mb-20 bg-gray-900 container mx-auto">
       <!-- Title Section -->
       <div class="text-left">
         <h2 class="text-lg font-semibold text-gray-100">Explore Juga</h2>
         <h1 class="text-3xl font-bold text-white mt-2">
-          Wisata Pilihan Di Kuningan
+          Wisata Pilihan Di Indonesia
         </h1>
       </div>
 
@@ -420,7 +405,9 @@
     </section>
 
     <!-- Testimoni-->
-    <section class="bg-gray-900 mx-auto py-16 px-20 mb-20 text-center">
+    <section
+      class="bg-gray-900 py-16 px-20 mb-20 text-center container mx-auto"
+    >
       <h2 class="text-4xl font-bold text-white">Apa Kata Pengguna Kami</h2>
       <p class="text-gray-100 mt-2 mb-10">
         Ulasan nyata dari pelanggan luar biasa kami
@@ -431,7 +418,7 @@
       >
         <!-- Testimonial Card 1 -->
         <div
-          class="relative bg-gray-600 shadow-lg rounded-lg p-6 flex flex-col items-center"
+          class="relative bg-gray-700/60 shadow-lg rounded-lg p-6 flex flex-col items-center"
         >
           <div
             class="w-20 h-20 rounded-full overflow-hidden border-4 border-[#0DCDC2]"
@@ -448,7 +435,7 @@
 
         <!-- Testimonial Card 2 -->
         <div
-          class="relative bg-gray-600 shadow-lg rounded-lg p-6 flex flex-col items-center"
+          class="relative bg-gray-700/60 shadow-lg rounded-lg p-6 flex flex-col items-center"
         >
           <div
             class="w-20 h-20 rounded-full overflow-hidden border-4 border-[#0DCDC2]"
@@ -465,7 +452,7 @@
 
         <!-- Testimonial Card 3 -->
         <div
-          class="relative bg-gray-600 shadow-lg rounded-lg p-6 flex flex-col items-center"
+          class="relative bg-gray-700/60 shadow-lg rounded-lg p-6 flex flex-col items-center"
         >
           <div
             class="w-20 h-20 rounded-full overflow-hidden border-4 border-[#0DCDC2]"
@@ -483,7 +470,7 @@
     </section>
 
     <!--BANNER-->
-    <section class="relative w-full">
+    <section class="relative w-full container mx-auto">
       <!-- Gambar -->
       <div class="w-full h-[60vh] md:h-[80vh]">
         <a href="#">
@@ -493,19 +480,19 @@
           />
         </a>
         <div
-          class="absolute inset-0 bg-gradient-to-t from-gray-900 via-transparent to-transparent opacity-100 rounded-lg"
+          class="absolute inset-0 bg-gradient-to-t from-gray-900 via-transparent to-transparent opacity-100"
         ></div>
         <div
-          class="absolute inset-0 bg-gradient-to-b from-gray-900 via-transparent to-transparent opacity-100 rounded-lg"
+          class="absolute inset-0 bg-gradient-to-b from-gray-900 via-transparent to-transparent opacity-100"
         ></div>
         <div
-          class="absolute inset-0 bg-gradient-to-b from-gray-900 via-transparent to-transparent opacity-100 rounded-lg"
+          class="absolute inset-0 bg-gradient-to-b from-gray-900 via-transparent to-transparent opacity-100"
         ></div>
       </div>
 
       <!-- Teks (Content) - Teks di atas gambar -->
       <div
-        class="absolute inset-0 flex flex-col justify-center items-center text-center text-white px-4 py-6 md:p-12"
+        class="absolute inset-0 flex flex-col justify-center items-center text-center text-white px-20 py-6 md:p-12"
       >
         <div class="w-24 h-2 bg-[#0DCDC2] mb-4 mx-auto"></div>
         <h2
@@ -514,7 +501,7 @@
           Endlessly customizable
         </h2>
         <p
-          class="font-light text-gray-100 text-sm md:text-base mb-6 leading-relaxed"
+          class="font-light text-gray-100 text-sm md:text-base mb-6 px-20 leading-relaxed"
         >
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit in
           aliquam odio deserunt dicta impedit at? Vero repellendus optio dolorum
@@ -531,7 +518,7 @@
 
     <!--GALERI-->
     <section
-      class="grid xl:grid-cols-5 md:grid-cols-4 grid-cols-2 gap-2 relative mt-20"
+      class="grid xl:grid-cols-5 md:grid-cols-4 grid-cols-2 gap-2 relative mt-20 container mx-auto"
     >
       <div class="row-span-2 md:order-1 md:block hidden">
         <img
@@ -579,11 +566,11 @@
       <div
         class="border-2 border-[#0DCDC2] p-5 flex flex-col justify-center xl:order-7 md:order-5 order-3 xl:col-span-1 md:col-span-2"
       >
-        <h2 class="font-semibold text-xl text-center text-[#0DCDC2] uppercase">
+        <h2 class="font-semibold text-xl text-[#0DCDC2] uppercase">
           <span>Mari Explore Lebih Jauh</span>
-          <span>Kota Kuningan</span>
+          <span>Wisata Di Indonesia</span>
         </h2>
-        <p class="text-sm mt-3 text-center text-[#0DCDC2]">
+        <p class="text-sm mt-3 text-[#0DCDC2]/70">
           <span>Menelusuri Keindahan Alam, Sejarah, </span>
           <span>dan Kuliner yang Memikat.</span>
         </p>
@@ -636,13 +623,13 @@
     </section>
 
     <!-- Footer Section -->
-    <footer class="bg-gray-900 text-white py-8">
+    <footer class="bg-gray-900 text-white py-8 container mx-auto">
       <div class="container mx-auto px-6 md:px-12 text-center">
         <!-- Logo and Title -->
         <div class="mb-6">
-          <h1 class="text-3xl font-bold">KuninganWonders</h1>
+          <h1 class="text-3xl font-bold">IndoWonders</h1>
           <p class="text-gray-400 mt-2">
-            Exploring Nature, Culture, and Adventure in Kuningan
+            Exploring Nature, Culture, and Adventure in Indonesia
           </p>
         </div>
 

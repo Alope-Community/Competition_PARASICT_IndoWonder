@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>KuninganWonders</title>
+    <title>IndoWonders</title>
+    <link rel="icon" href="assets/img/logo/logo.png" />
     <!-- SWIPER MIN.CSS -->
     <link rel="stylesheet" href="assets/js/swiper.min.js" />
     <!-- ANIMATE CSS CDN -->
@@ -13,15 +14,14 @@
     />
     <!-- Font Awwesom -->
     <link rel="stylesheet" href="assets/font-awesome/css/all.min.css" />
-    <!-- Parallax JS-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="assets/parallax.js/parallax.js"></script>
-    <!-- Tailwind CSS CDN -->
-    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+
+    <!-- Tailwind CSS -->
+    <!-- <script src="https://unpkg.com/@tailwindcss/browser@4"></script> -->
+    <link href="./src/output.css" rel="stylesheet" />
   </head>
   <body class="bg-gray-900 text-white">
     <!-- Section NAVBAR -->
-    <section>
+    <section class="container mx-auto">
       <!-- Header (Navbar) -->
       <header
         class="px-4 py-6 sm:px-6 lg:px-20 w-full fixed top-0 left-0 z-50 transition-all duration-300 ease-in-out"
@@ -31,26 +31,11 @@
           <main class="flex items-center justify-between w-full">
             <!-- Logo and Title -->
             <div class="flex items-center text-white space-x-2">
-              <svg
-                class="w-6 h-6"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
-                ></path>
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
-                ></path>
-              </svg>
+              <img
+                class="w-14 h-8"
+                src="assets/img/logo/logowhite1.png"
+                alt=""
+              />
               <h1 class="text-2xl font-semibold">IndoWonders</h1>
             </div>
 
@@ -98,7 +83,7 @@
       </header>
     </section>
     <!--BANNER-->
-    <section class="relative w-full">
+    <section class="relative w-full container mx-auto">
       <!-- Gambar -->
       <div class="w-full h-[30vh] md:h-[70vh]">
         <a href="#">
@@ -119,13 +104,13 @@
         <h2
           class="font-display font-bold text-4xl md:text-5xl lg:text-6xl mb-6"
         >
-          Kenapa Harus Ber-Wisata <br />
-          Di Kuningan ?
+          Kenapa Harus Ber-Libur <br />
+          Di Indonesia ?
         </h2>
       </div>
     </section>
     <!--Section Card-->
-    <section class="px-8 md:px-20 py-16">
+    <section class="px-8 md:px-20 py-16 container mx-auto">
       <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
         <!-- Card 1 -->
         <div class="relative">
@@ -136,36 +121,58 @@
           <div class="flex items-center mb-50 gap-3">
             <div class="w-8 h-[2px] bg-[#0DCDC2]"></div>
             <p
-              class="text-sm font-semibold text-[#0DCDC2] tracking-wider uppercase"
+              class="text-md font-semibold text-[#0DCDC2] tracking-wider uppercase"
             >
-              Get Started
+              Tentang Alam
             </p>
           </div>
-          <h2 class="text-3xl font-bold mt-2">What level of hiker are you?</h2>
-          <p class="text-gray-300 text-sm mt-4 leading-relaxed">
-            Determining what level of hiker you are can be important when
-            planning a trip...
+          <h2 class="text-3xl font-bold mt-2">Keindahan Alam Yang Memikat</h2>
+          <p
+            class="read-more-text text-gray-300 text-md mt-4 leading-relaxed text-justify"
+            style="
+              max-height: 100px;
+              overflow: hidden;
+              transition: max-height 0.3s ease;
+            "
+          >
+            Indonesia, sebagai negara kepulauan terbesar di dunia, menyimpan
+            keindahan alam yang begitu memikat. Dari puncak gunung yang megah
+            hingga lautan yang jernih, setiap sudut Nusantara menawarkan pesona
+            yang tiada duanya. Gunung-gunung seperti Rinjani di Lombok dan Bromo
+            di Jawa Timur menyajikan panorama luar biasa, terutama saat matahari
+            terbit dan terbenam, menciptakan pemandangan yang begitu magis dan
+            menenangkan. Selain itu, pegunungan lain seperti Gunung Semeru di
+            Jawa Timur dan Gunung Kerinci di Sumatra juga menghadirkan
+            pengalaman mendaki yang menantang sekaligus mengagumkan, dengan
+            lanskap alam yang memukau dan udara yang menyegarkan. Di sisi lain,
+            kekayaan bahari Indonesia tidak kalah menakjubkan. Pantai-pantai
+            eksotis seperti Raja Ampat di Papua, Pink Beach di Komodo, dan Nusa
+            Penida di Bali memperlihatkan kejernihan air serta keanekaragaman
+            biota laut yang menakjubkan. Keindahan bawah lautnya, yang dipenuhi
+            terumbu karang berwarna-warni dan berbagai spesies ikan tropis,
+            menjadikan Indonesia salah satu destinasi menyelam terbaik di dunia.
           </p>
           <a
             href="#"
-            class="inline-block mt-6 text-[#0DCDC2] font-medium text-sm hover:text-white"
+            class="read-more-btn inline-block mt-2 text-[#0DCDC2] font-medium text-md hover:text-white"
             >Read more →</a
           >
         </div>
+
         <div>
           <img
-            src="assets/img/cape-town.jpg"
+            src="assets/img/activities/alam.jpg"
             alt="Hiking"
-            class="max-w-full w-auto rounded-lg shadow-lg"
+            class="max-w-full rounded-lg shadow-lg h-[550px] w-full object-cover"
           />
         </div>
 
         <!-- Card 2 -->
         <div>
           <img
-            src="assets/img/cape-town.jpg"
+            src="assets/img/wisataBudaya/fire.jpg"
             alt="Hiking"
-            class="max-w-full w-auto rounded-lg shadow-lg"
+            class="max-w-full rounded-lg shadow-lg h-[550px] w-full object-cover"
           />
         </div>
         <div class="relative">
@@ -176,21 +183,40 @@
           <div class="flex items-center mb-50 gap-3">
             <div class="w-8 h-[2px] bg-[#0DCDC2]"></div>
             <p
-              class="text-sm font-semibold text-[#0DCDC2] tracking-wider uppercase"
+              class="text-md font-semibold text-[#0DCDC2] tracking-wider uppercase"
             >
-              Hiking Essentials
+              Tentang Budaya
             </p>
           </div>
-          <h2 class="text-3xl font-bold mt-2">
-            Picking the right Hiking Gear!
-          </h2>
-          <p class="text-gray-300 text-sm mt-4 leading-relaxed">
-            The thing about backpacking hiking is that you don’t really need any
-            special gear...
+          <h2 class="text-3xl font-bold mt-2">Keanekaragaman Budaya</h2>
+          <p
+            class="read-more-text text-gray-300 text-md mt-4 leading-relaxed text-justify"
+            style="
+              max-height: 100px;
+              overflow: hidden;
+              transition: max-height 0.3s ease;
+            "
+          >
+            Indonesia adalah negara yang kaya akan keanekaragaman budaya, dengan
+            lebih dari 1.300 suku bangsa yang tersebar di seluruh kepulauan.
+            Setiap daerah memiliki adat istiadat, bahasa, seni, kuliner, dan
+            tradisi yang unik, mencerminkan identitas serta warisan leluhur yang
+            telah diwariskan secara turun-temurun. Keanekaragaman ini bukan
+            sekadar perbedaan, tetapi juga menjadi kekayaan yang memperkuat
+            persatuan bangsa dalam harmoni, sejalan dengan semboyan Bhinneka
+            Tunggal Ika. Bahasa daerah menjadi salah satu aspek penting dalam
+            kekayaan budaya Indonesia. Dengan lebih dari 700 bahasa yang
+            digunakan oleh masyarakat di berbagai pelosok negeri, Indonesia
+            menjadi salah satu negara dengan jumlah bahasa daerah terbanyak di
+            dunia. Bahasa Jawa, Sunda, Batak, Minangkabau, Bugis, hingga Papua,
+            masing-masing memiliki karakteristik unik yang mencerminkan nilai
+            dan tradisi masyarakatnya. Meski beragam, Bahasa Indonesia tetap
+            menjadi pemersatu, memungkinkan komunikasi yang lancar di antara
+            masyarakat dari berbagai latar belakang.
           </p>
           <a
             href="#"
-            class="inline-block mt-6 text-[#0DCDC2] font-medium text-sm hover:text-white"
+            class="read-more-btn inline-block mt-2 text-[#0DCDC2] font-medium text-md hover:text-white"
             >Read more →</a
           >
         </div>
@@ -204,40 +230,62 @@
           <div class="flex items-center mb-50 gap-3">
             <div class="w-8 h-[2px] bg-[#0DCDC2]"></div>
             <p
-              class="text-sm font-semibold text-[#0DCDC2] tracking-wider uppercase"
+              class="text-md font-semibold text-[#0DCDC2] tracking-wider uppercase"
             >
-              Where You Go is the Key
+              Tentang Kuliner
             </p>
           </div>
-          <h2 class="text-3xl font-bold mt-2">Understand Your Map & Timing</h2>
-          <p class="text-gray-300 text-sm mt-4 leading-relaxed">
-            To start, pick out the hiking guide and map. If it's raining, I
-            know...
+          <h2 class="text-3xl font-bold mt-2">Kuliner Yang Lezat</h2>
+          <p
+            class="read-more-text text-gray-300 text-md mt-4 leading-relaxed text-justify"
+            style="
+              max-height: 100px;
+              overflow: hidden;
+              transition: max-height 0.3s ease;
+            "
+          >
+            Kuliner Indonesia dikenal dengan cita rasanya yang kaya dan beragam,
+            mencerminkan kekayaan budaya serta kearifan lokal di setiap daerah.
+            Dengan perpaduan rempah-rempah yang melimpah, masakan Indonesia
+            memiliki rasa yang khas, mulai dari gurih, pedas, manis, hingga asam
+            yang menggugah selera. Beberapa hidangan ikonik seperti Rendang dari
+            Sumatera Barat yang dinobatkan sebagai salah satu makanan terenak di
+            dunia, Soto yang memiliki banyak variasi dari berbagai daerah
+            seperti Soto Betawi, Soto Lamongan, dan Soto Banjar, Sate dengan
+            beragam jenis seperti Sate Padang, Sate Madura, dan Sate Lilit khas
+            Bali, hingga Pempek Palembang dengan kuah cuko yang khas, menjadi
+            bukti kekayaan kuliner Nusantara. Tak hanya makanan utama, Indonesia
+            juga memiliki berbagai jenis sayur yang menjadi bagian penting dalam
+            hidangan sehari-hari. Kangkung, misalnya, adalah salah satu sayuran
+            yang sangat populer dan dapat ditemukan di berbagai daerah. Kangkung
+            sering diolah menjadi Cah Kangkung yang ditumis dengan bawang putih
+            dan cabai, atau dihidangkan dalam bentuk Plecing Kangkung khas
+            Lombok yang pedas dan segar.
           </p>
           <a
             href="#"
-            class="inline-block mt-6 text-[#0DCDC2] font-medium text-sm hover:text-white"
+            class="read-more-btn inline-block mt-2 text-[#0DCDC2] font-medium text-md hover:text-white"
             >Read more →</a
           >
         </div>
         <div>
           <img
-            src="assets/img/cape-town.jpg"
+            src="assets/img/makananKhas/kangkung.jpg"
             alt="Hiking"
-            class="max-w-full w-auto rounded-lg shadow-lg"
+            class="max-w-full rounded-lg shadow-lg h-[550px] w-full object-cover"
           />
         </div>
       </div>
     </section>
 
     <!-- Footer Section -->
-    <footer class="bg-gray-900 text-white py-8">
+    <footer class="bg-gray-900 text-white py-8 container mx-auto">
       <div class="container mx-auto px-6 md:px-12 text-center">
         <!-- Logo and Title -->
         <div class="mb-6">
-          <h1 class="text-3xl font-bold">KuninganWonders</h1>
+          <h1 class="text-3xl font-bold">IndoWonders</h1>
           <p class="text-gray-400 mt-2">
-            Exploring Nature, Culture, and Adventure in Kuningan
+            Exploring Nature, Culture, and Adventure in Indonesia
           </p>
         </div>
 
@@ -309,6 +357,27 @@
       }
 
       window.addEventListener("scroll", handleScroll);
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        document.querySelectorAll(".read-more-btn").forEach((button) => {
+          button.addEventListener("click", function (event) {
+            event.preventDefault();
+
+            let text = this.previousElementSibling; // Ambil paragraf terkait
+
+            if (text.style.maxHeight === "100px") {
+              text.style.maxHeight = text.scrollHeight + "px"; // Expand teks
+              text.style.overflow = "visible";
+              this.innerHTML = "Read less ↑";
+            } else {
+              text.style.maxHeight = "100px"; // Kembali ke mode ringkas
+              text.style.overflow = "hidden";
+              this.innerHTML = "Read more →";
+            }
+          });
+        });
+      });
     </script>
   </body>
 </html>
