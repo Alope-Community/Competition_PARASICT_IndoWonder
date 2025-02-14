@@ -42,41 +42,65 @@
             <!-- Buttons -->
             <div class="flex items-center space-x-3">
               <button
-                class="bg-gray-100 text-gray-400 hover:text-gray-900 w-8 h-8 rounded-full flex items-center justify-center"
+                class="bg-gray-100 text-gray-900 hover:text-[#0DCDC2] w-8 h-8 rounded-full flex items-center justify-center"
               >
-                <svg
-                  class="w-4 h-4"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                  ></path>
-                </svg>
+                <i class="fa-solid fa-moon"></i>
               </button>
-              <button
-                class="bg-gray-100 text-gray-400 hover:text-gray-800 w-8 h-8 rounded-full flex items-center justify-center"
+              <a
+                href="search.html"
+                class="bg-gray-100 text-gray-900 hover:text-[#0DCDC2] w-8 h-8 rounded-full flex items-center justify-center"
               >
-                <svg
-                  class="w-4 h-4"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </a>
+              <div class="group">
+                <button
+                  class="bg-gray-100 text-gray-900 hover:text-[#0DCDC2] w-8 h-8 rounded-full flex items-center justify-center group"
                 >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M4 6h16M4 12h16M4 18h16"
-                  ></path>
-                </svg>
-              </button>
+                  <i class="fa-solid fa-bars"></i>
+                </button>
+                <div
+                  class="bg-gray-900 w-[350px] fixed h-screen -top-10 bottom-0 -right-20 z-50 justify-center items-center group-hover:flex hidden"
+                >
+                  <button
+                    class="absolute top-8 right-5 bg-gray-100 rounded-full size-6 block"
+                  >
+                    <i class="fa-solid fa-xmark text-gray-900 rounded-full"></i>
+                  </button>
+                  <ul class="text-center text-white font-semibold text-xl">
+                    <li
+                      class="mb-3 transition-all duration-300 ease-in-out transform hover:text-[#0DCDC2] hover:scale-105"
+                    >
+                      <a href="index.html">Beranda</a>
+                    </li>
+                    <li
+                      class="mb-3 transition-all duration-300 ease-in-out transform hover:text-[#0DCDC2] hover:scale-105"
+                    >
+                      <a href="about.html">About</a>
+                    </li>
+                    <li
+                      class="mb-3 transition-all duration-300 ease-in-out transform hover:text-[#0DCDC2] hover:scale-105"
+                    >
+                      <a href="search.html">Search</a>
+                    </li>
+                    <li
+                      class="mb-3 transition-all duration-300 ease-in-out transform hover:text-[#0DCDC2] hover:scale-105"
+                    >
+                      <a href="kategori.html">Kategori</a>
+                    </li>
+
+                    <li
+                      class="mb-3 transition-all duration-300 ease-in-out transform hover:text-[#0DCDC2] hover:scale-105"
+                    >
+                      <a href="informasi.html">Informasi</a>
+                    </li>
+                    <li
+                      class="mb-3 transition-all duration-300 ease-in-out transform hover:text-[#0DCDC2] hover:scale-105"
+                    >
+                      <a href="subscription.html">Subscription</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </main>
         </nav>

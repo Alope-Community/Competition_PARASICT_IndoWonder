@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IndoWonders</title>
+    <link href="./src/output.css" rel="stylesheet" />
+    <link rel="icon" href="assets/img/logo/logo.png" />
+
+    <!-- ANIMATE CSS CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- Font Awwesom -->
+    <link rel="stylesheet" href="assets/font-awesome/css/all.min.css" />
+
+    <!-- Tailwind CSS -->
+    <link href="./src/output.css" rel="stylesheet" />
+  </head>
+  <body
+    class="bg-gray-900 text-white dark:bg-gray-900 text- dark:text-gray-200"
+  >
+    <header
+      class="px-4 py-6 sm:px-6 lg:px-20 w-full fixed top-0 left-0 z-50 transition-all duration-300 ease-in-out"
+      id="navbar"
+    >
+      <nav class="animate__animated animate__fadeInLeft">
+        <main class="flex items-center justify-between w-full">
+          <!-- Logo and Title -->
+          <div class="flex items-center text-white space-x-2">
+            <img class="w-14 h-8" src="assets/img/logo/logowhite1.png" alt="" />
+            <h1 class="text-2xl font-semibold">IndoWonders</h1>
+          </div>
+
+          <!-- Buttons -->
+          <div class="flex items-center space-x-3">
+            <button
+              class="bg-gray-100 text-gray-900 hover:text-[#0DCDC2] w-8 h-8 rounded-full flex items-center justify-center"
+            >
+              <i class="fa-solid fa-moon"></i>
+            </button>
+            <a
+              href="search.html"
+              class="bg-gray-100 text-gray-900 hover:text-[#0DCDC2] w-8 h-8 rounded-full flex items-center justify-center"
+            >
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </a>
+            <div class="group">
+              <button
+                class="bg-gray-100 text-gray-900 hover:text-[#0DCDC2] w-8 h-8 rounded-full flex items-center justify-center group"
+              >
+                <i class="fa-solid fa-bars"></i>
+              </button>
+              <div
+                class="bg-gray-900 w-[350px] fixed h-screen -top-10 bottom-0 -right-20 z-50 justify-center items-center group-hover:flex hidden"
+              >
+                <button
+                  class="absolute top-8 right-5 bg-gray-100 rounded-full size-6 block"
+                >
+                  <i class="fa-solid fa-xmark text-gray-900 rounded-full"></i>
+                </button>
+                <ul class="text-center text-white font-semibold text-xl">
+                  <li
+                    class="mb-3 transition-all duration-300 ease-in-out transform hover:text-[#0DCDC2] hover:scale-105"
+                  >
+                    <a href="index.html">Beranda</a>
+                  </li>
+                  <li
+                    class="mb-3 transition-all duration-300 ease-in-out transform hover:text-[#0DCDC2] hover:scale-105"
+                  >
+                    <a href="about.html">About</a>
+                  </li>
+                  <li
+                    class="mb-3 transition-all duration-300 ease-in-out transform hover:text-[#0DCDC2] hover:scale-105"
+                  >
+                    <a href="search.html">Search</a>
+                  </li>
+                  <li
+                    class="mb-3 transition-all duration-300 ease-in-out transform hover:text-[#0DCDC2] hover:scale-105"
+                  >
+                    <a href="kategori.html">Kategori</a>
+                  </li>
+
+                  <li
+                    class="mb-3 transition-all duration-300 ease-in-out transform hover:text-[#0DCDC2] hover:scale-105"
+                  >
+                    <a href="informasi.html">Informasi</a>
+                  </li>
+                  <li
+                    class="mb-3 transition-all duration-300 ease-in-out transform hover:text-[#0DCDC2] hover:scale-105"
+                  >
+                    <a href="subscription.html">Subscription</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </main>
+      </nav>
+    </header>
+    <!-- Section Subsription-->
+    <section
+      class="grid lg:grid-cols-2 gap-10 items-center mb-10 px-5 md:px-10 xl:px-20 lg:h-[800px] h-[700px] relative"
+    >
+      <div>
+        <h2 class="text-3xl md:text-5xl font-bold mb-5">
+          SUBSCRIPTION<span class="text-[#0DCDC2]">.</span>
+        </h2>
+        <p class="text-sm md:text-base">
+          Berlangganan sekarang untuk mendapatkan konten eksklusif dan tetap
+          terinformasi dengan berita dan penawaran terbaru.
+        </p>
+        <div class="relative mt-10 flex">
+          <input
+            type="text"
+            class="px-5 py-2 bg-gray-800 dark:bg-gray-700 rounded-l max-w-[200px] md:max-w-[350px] focus:outline-none focus:border-transparent"
+            placeholder="Email..."
+          />
+
+          <button
+            class="bg-[#0DCDC2] px-5 py-2 border-[#0DCDC2] rounded-r hover:bg-[#0DCDC2]/80"
+          >
+            Subscribe
+          </button>
+        </div>
+        <div class="mt-10">
+          <h3 class="font-semibold mb-3 text-xl md:text-base">
+            Subscribe lewat:
+          </h3>
+          <div class="flex gap-10">
+            <div class="flex flex-col items-center">
+              <img src="../assets/img/icon/gmail.png" alt="Gmail" class="w-8" />
+              <p class="mt-2 text-sm">Gmail</p>
+            </div>
+            <div class="flex flex-col items-center">
+              <img
+                src="../assets/img/icon/instagram.png"
+                alt="Instagram"
+                class="w-8"
+              />
+              <p class="mt-2 text-sm">Instagram</p>
+            </div>
+            <div class="flex flex-col items-center">
+              <img
+                src="../assets/img/icon/facebook.png"
+                alt="Facebook"
+                class="w-8"
+              />
+              <p class="mt-2 text-sm">Facebook</p>
+            </div>
+          </div>
+          <div class="w-full h-[1px] bg-gray-600 my-4"></div>
+          <div class="flex items-center gap-3 mt-5 text-gray-300">
+            <i class="fas fa-bell text-xl text-gray-300"></i>
+            <p class="text-sm">Dapatkan notifikasi ketika ada berita baru!</p>
+          </div>
+        </div>
+      </div>
+      <div class="hidden h-[400px] lg:flex gap-5">
+        <div class="w-[40%] -translate-y-10">
+          <img
+            src="https://images.unsplash.com/photo-1523952578875-e6bb18b26645?w=600&auto=format&fit=crop&q=60"
+            alt="Image 1"
+            class="w-full h-full object-cover rounded-sm"
+          />
+        </div>
+        <div class="w-[40%] translate-y-10">
+          <img
+            src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80&w=2070&auto=format&fit=crop"
+            alt="Image 2"
+            class="w-full h-full object-cover rounded-sm"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <main
+        class="grid lg:grid-cols-3 gap-10 px-5 md:px-10 xl:px-20 mb-20 text-white"
+      >
+        <div>
+          <h2 class="text-3xl font-bold mb-5">
+            Frequently Asked Questions<span class="text-[#0DCDC2]">.</span>
+          </h2>
+          <p class="text-sm text-gray-100 dark:text-gray-300 mb-10">
+            Jika ada pertanyaan lainnya, silakan hubungi tim kami di
+            support@IndoWonders.com.
+          </p>
+          <button
+            class="text-sm border-2 px-5 py-3 border-[#0DCDC2] rounded-md relative transition-all duration-300 ease-in-out hover:bg-[#0DCDC2] hover:text-white"
+          >
+            Lihat semua FAQ
+          </button>
+        </div>
+        <div class="lg:col-span-2">
+          <button
+            class="accordion bg-gray-800 dark:bg-gray-800 p-4 w-full text-left rounded-t transition-all duration-300 ease-in-out hover:bg-gray-600"
+          >
+            Apa Keuntungan dari Berlangganan?
+          </button>
+          <div
+            class="panel hidden p-6 bg-gray-700 dark:bg-gray-700 transition-all duration-300 ease-in-out"
+          >
+            Berlangganan bukan hanya soal akses eksklusif ke konten keren, tapi
+            juga tentang keuntungan eksklusif. Kamu bisa dapetin info terkini
+            duluan sebelum yang lain, nikmatin acara eksklusif, dan bahkan lepas
+            dari gangguan iklan. Ada juga diskon, promosi, dan hadiah spesial
+            buat yang langganan setia. Jadi, dengan berlangganan, bukan cuma
+            akses ke konten premium, tapi juga gaya hidup kekinian dan manfaat
+            ekstra lainnya!
+          </div>
+
+          <button
+            class="accordion bg-gray-800 dark:bg-gray-800 p-4 w-full text-left transition-all duration-300 ease-in-out hover:bg-gray-600"
+          >
+            Apakah Subscription Berbayar?
+          </button>
+          <div
+            class="panel hidden p-4 bg-gray-700 dark:bg-gray-700 transition-all duration-300 ease-in-out"
+          >
+            Tidak, Tentu saja ini gratis. Tetapi jika anda ingin support kami
+            silahkan nonaktifkan adsblock anda. Terimakasih!
+          </div>
+
+          <button
+            class="accordion bg-gray-800 dark:bg-gray-800 p-4 w-full text-left transition-all duration-300 ease-in-out hover:bg-gray-600"
+          >
+            Saya Ingin Berhenti Berlangganan
+          </button>
+          <div
+            class="panel hidden p-4 bg-gray-700 dark:bg-gray-700 transition-all duration-300 ease-in-out"
+          >
+            Berlangganan bukan hanya soal akses eksklusif ke konten keren, tapi
+            juga tentang keuntungan eksklusif. Kamu bisa dapetin info terkini
+            duluan sebelum yang lain, nikmatin acara eksklusif, dan bahkan lepas
+            dari gangguan iklan. Ada juga diskon, promosi, dan hadiah spesial
+            buat yang langganan setia. Jadi, dengan berlangganan, bukan cuma
+            akses ke konten premium, tapi juga gaya hidup kekinian dan manfaat
+            ekstra lainnya!
+          </div>
+
+          <button
+            class="accordion bg-gray-800 dark:bg-gray-800 p-4 w-full text-left rounded-b transition-all duration-300 ease-in-out hover:bg-gray-600"
+          >
+            Bagaimana Cara Mengganti Email Subscription?
+          </button>
+          <div
+            class="panel hidden p-4 bg-gray-700 dark:bg-gray-700 transition-all duration-300 ease-in-out"
+          >
+            Anda bisa mengganti email melalui pengaturan akun...
+          </div>
+        </div>
+      </main>
+    </section>
+    <!-- Footer Section -->
+    <footer class="bg-gray-900 text-white py-8 container mx-auto">
+      <div class="container mx-auto px-6 md:px-12 text-center">
+        <!-- Logo and Title -->
+        <div class="mb-6">
+          <h1 class="text-3xl font-bold">IndoWonders</h1>
+          <p class="text-gray-400 mt-2">
+            Exploring Nature, Culture, and Adventure in Indonesia
+          </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 mb-6"
+        >
+          <div>
+            <h3 class="font-semibold text-lg">Company</h3>
+            <ul class="mt-3 space-y-2 text-gray-400">
+              <li><a href="#" class="hover:text-white">About Us</a></li>
+              <li><a href="#" class="hover:text-white">Careers</a></li>
+              <li><a href="#" class="hover:text-white">Contact</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="font-semibold text-lg">Explore</h3>
+            <ul class="mt-3 space-y-2 text-gray-400">
+              <li><a href="#" class="hover:text-white">Destinations</a></li>
+              <li><a href="#" class="hover:text-white">Tours</a></li>
+              <li><a href="#" class="hover:text-white">Packages</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="font-semibold text-lg">Support</h3>
+            <ul class="mt-3 space-y-2 text-gray-400">
+              <li><a href="#" class="hover:text-white">Help Center</a></li>
+              <li><a href="#" class="hover:text-white">FAQs</a></li>
+              <li><a href="#" class="hover:text-white">Terms of Service</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="font-semibold text-lg">Social</h3>
+            <ul class="mt-3 space-y-2 text-gray-400">
+              <li><a href="#" class="hover:text-white">Facebook</a></li>
+              <li><a href="#" class="hover:text-white">Instagram</a></li>
+              <li><a href="#" class="hover:text-white">Twitter</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="border-t border-[#0DCDC2] pt-4">
+          <p class="text-gray-500 text-sm">
+            &copy; Copyright 2025 | by ALOPE Team
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script>
+      document.querySelectorAll(".accordion").forEach((button) => {
+        button.addEventListener("click", () => {
+          const panel = button.nextElementSibling;
+
+          // Toggle class hidden
+          panel.classList.toggle("hidden");
+
+          // Tambahkan efek smooth slide-down
+          if (!panel.classList.contains("hidden")) {
+            panel.style.maxHeight = panel.scrollHeight + "px";
+            panel.style.opacity = "1";
+          } else {
+            panel.style.maxHeight = "0px";
+            panel.style.opacity = "0";
+          }
+        });
+      });
+    </script>
+    <script>
+      const navbar = document.getElementById("navbar");
+
+      function handleScroll() {
+        if (window.scrollY > 0) {
+          navbar.classList.add(
+            "bg-wwhite",
+            "shadow-lg",
+            "backdrop-blur-lg",
+            "bg-opacity-60"
+          );
+        } else {
+          navbar.classList.remove(
+            "bg-white",
+            "shadow-lg",
+            "backdrop-blur-lg",
+            "bg-opacity-60"
+          );
+        }
+      }
+
+      window.addEventListener("scroll", handleScroll);
+    </script>
+  </body>
+</html>
