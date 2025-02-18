@@ -1,11 +1,16 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="id" class="">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>IndoWonders</title>
     <link href="./src/output.css" rel="stylesheet" />
     <link rel="icon" href="assets/img/logo/logo.png" />
+    <!--font-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- ANIMATE CSS CDN -->
     <link
@@ -19,48 +24,73 @@
     <link href="./src/output.css" rel="stylesheet" />
   </head>
   <body
-    class="bg-gray-900 text-white dark:bg-gray-900 text- dark:text-gray-200"
+    class="bg-gray-100 font-poppins text-white dark:bg-gray-900 dark:text-gray-200"
   >
     <header
       class="px-4 py-6 sm:px-6 lg:px-20 w-full fixed top-0 left-0 z-50 transition-all duration-300 ease-in-out"
       id="navbar"
     >
-      <nav class="animate__animated animate__fadeInLeft">
+      <nav class="animate__animated animate__fadeInRight container mx-auto">
         <main class="flex items-center justify-between w-full">
           <!-- Logo and Title -->
           <div class="flex items-center text-white space-x-2">
-            <img class="w-14 h-8" src="assets/img/logo/logowhite1.png" alt="" />
-            <h1 class="text-2xl font-semibold">IndoWonders</h1>
+            <img
+              class="w-14 h-8 dark:hidden block"
+              src="assets/img/logo/logohijau1.png"
+              alt=""
+            />
+            <img
+              class="w-14 h-8 hidden dark:block"
+              src="assets/img/logo/logowhite1.png"
+              alt=""
+            />
+            <h1 class="text-2xl font-semibold text-gray-900 dark:text-white">
+              IndoWonders
+            </h1>
           </div>
 
           <!-- Buttons -->
           <div class="flex items-center space-x-3">
             <button
-              class="bg-gray-100 text-gray-900 hover:text-[#0DCDC2] w-8 h-8 rounded-full flex items-center justify-center"
+              id="theme-toggle"
+              class="bg-gray-900 dark:bg-gray-100 text-gray-900 hover:text-[#0DCDC2] w-8 h-8 rounded-full flex items-center justify-center"
             >
-              <i class="fa-solid fa-moon"></i>
+              <i
+                class="fa-solid fa-moon text-gray-100 hover:text-[#0DCDC2] dark:text-gray-900 dark:hover:text-[#0DCDC2]"
+              ></i>
             </button>
             <a
               href="search.html"
-              class="bg-gray-100 text-gray-900 hover:text-[#0DCDC2] w-8 h-8 rounded-full flex items-center justify-center"
+              class="bg-gray-900 dark:bg-gray-100 text-gray-900 hover:text-[#0DCDC2] w-8 h-8 rounded-full flex items-center justify-center"
             >
-              <i class="fa-solid fa-magnifying-glass"></i>
+              <i
+                class="fa-solid fa-magnifying-glass text-gray-100 hover:text-[#0DCDC2] dark:text-gray-900 dark:hover:text-[#0DCDC2]"
+              ></i>
             </a>
             <div class="group">
               <button
-                class="bg-gray-100 text-gray-900 hover:text-[#0DCDC2] w-8 h-8 rounded-full flex items-center justify-center group"
+                class="bg-gray-900 dark:bg-gray-100 text-gray-900 hover:text-[#0DCDC2] w-8 h-8 rounded-full flex items-center justify-center"
+                id="menu-toggle"
               >
-                <i class="fa-solid fa-bars"></i>
+                <i
+                  class="fa-solid fa-bars text-gray-100 hover:text-[#0DCDC2] dark:text-gray-900 dark:hover:text-[#0DCDC2]"
+                ></i>
               </button>
               <div
-                class="bg-gray-900 w-[350px] fixed h-screen -top-10 bottom-0 -right-20 z-50 justify-center items-center group-hover:flex hidden"
+                id="menu"
+                class="bg-gray-100 dark:bg-gray-900 flex w-[350px] fixed h-[700px] -top-10 right-[-500px] z-50 justify-center items-center transition-all duration-500 ease-in-out"
               >
                 <button
-                  class="absolute top-8 right-5 bg-gray-100 rounded-full size-6 block"
+                  id="close-menu"
+                  class="absolute top-5 right-5 bg-gray-900 dark:bg-gray-100 rounded-full size-6"
                 >
-                  <i class="fa-solid fa-xmark text-gray-900 rounded-full"></i>
+                  <i
+                    class="fa-solid fa-xmark text-white hover:text-red-500 dark:text-gray-900 rounded-full dark:hover:text-red-500"
+                  ></i>
                 </button>
-                <ul class="text-center text-white font-semibold text-xl">
+                <ul
+                  class="text-center text-gray-900 dark:text-white font-semibold text-xl"
+                >
                   <li
                     class="mb-3 transition-all duration-300 ease-in-out transform hover:text-[#0DCDC2] hover:scale-105"
                   >
@@ -81,7 +111,6 @@
                   >
                     <a href="kategori.html">Kategori</a>
                   </li>
-
                   <li
                     class="mb-3 transition-all duration-300 ease-in-out transform hover:text-[#0DCDC2] hover:scale-105"
                   >
@@ -101,7 +130,7 @@
     </header>
     <!-- Section Informasi-->
     <section
-      class="mx-auto grid xl:grid-cols-4 gap-10 pt-32 xl:px-20 md:px-5 px-3"
+      class="container mx-auto grid xl:grid-cols-4 gap-10 pt-32 xl:px-20 md:px-5 px-3"
     >
       <div
         class="xl:col-span-3 xl:h-[600px] md:h-[400px] h-[300px] bg-cover relative z-10 flex items-end md:p-10 p-4 after:content-[''] after:absolute after:inset-0 after:bg-black/40 after:-z-10 bg-bottom rounded overflow-hidden"
@@ -120,7 +149,7 @@
               Gunung Ciremai Menjadi Daya Tarik Pendaki Gunung Indonesia
             </h2>
           </a>
-          <p class="text-gray-200 mt-3 text-sm xl:block hidden">
+          <p class="text-gray-200 mt-3 text-md xl:block hidden">
             Gunung Ceremai adalah gunung berapi kerucut yang secara
             administratif termasuk dalam wilayah dua kabupaten, yakni Kabupaten
             Kuningan dan Kabupaten Majalengka, Provinsi Jawa Barat.
@@ -130,10 +159,10 @@
       <div class="md:grid hidden xl:grid-cols-1 grid-cols-2 xl:gap-0 gap-10">
         <div>
           <div
-            class="xl:h-[250px] h-[230px] after:rounded relative after:content-[''] after:bg-black/40 after:absolute after:inset-0"
+            class="xl:h-[250px] h-[230px] after:rounded relative after:content-[''] after:bg-black/20 after:absolute after:inset-0"
           >
             <img
-              src="assets/img/wisataBudaya/galungan.jpg"
+              src="assets/img/wisataBudaya/ogoh.jpg"
               class="w-full xl:h-[250px] h-[230px] rounded object-cover"
             />
           </div>
@@ -141,39 +170,39 @@
 
         <div>
           <div class="xl:my-5 my-3">
-            <p class="text-[#0DCDC2]">BUDAYA</p>
+            <p class="text-[#0DCDC2] font-semibold">BUDAYA</p>
             <a href="detail.html">
               <h5
-                class="font-semibold xl:text-2xl text-base text-white dark:text-gray-200"
+                class="font-semibold xl:text-2xl text-base text-gray-900 dark:text-gray-200"
               >
-                Acara Galungan di Bali 2024
+                Parade Ogoh-ogoh Perayaan Nyepi di Bali
               </h5>
             </a>
           </div>
           <div class="xl:my-5 my-3">
-            <p class="text-[#0DCDC2]">FUN EVENT</p>
+            <p class="text-[#0DCDC2] font-semibold">FUN EVENT</p>
             <a href="detail.html">
               <h5
-                class="font-semibold xl:text-2xl tex-base text-white dark:text-gray-200"
+                class="font-semibold xl:text-2xl tex-base text-gray-900 dark:text-gray-200"
               >
                 Ubud Writers and Reader Festival
               </h5>
             </a>
           </div>
           <div class="xl:my-5 my-3">
-            <p class="text-[#0DCDC2]">INDONESIA DIMATA DUNIA</p>
+            <p class="text-[#0DCDC2] font-semibold">INDONESIA DIMATA DUNIA</p>
             <a href="detail.html">
               <h5
-                class="font-semibold xl:text-2xl tex-base text-white dark:text-gray-200"
+                class="font-semibold xl:text-2xl tex-base text-gray-900 dark:text-gray-200"
               >
-                Memiliki keunikan budaya yang erat dengan Agama Hindu
+                Memiliki Warisan Kearifan Lokal yang Dikagumi Dunia
               </h5>
             </a>
           </div>
         </div>
       </div>
     </section>
-    <main class="mx-auto mt-20 xl:px-20 md:px-10 px-3">
+    <main class="container mx-auto mt-20 xl:px-20 md:px-10 px-3">
       <section>
         <div class="grid xl:grid-cols-4 md:gap-10">
           <div class="xl:col-span-3">
@@ -185,12 +214,12 @@
                 <h2>TRENDING</h2>
               </span>
               <span
-                class="flex items-center gap-2 text-sm hover:underline dark:text-gray-200"
+                class="flex items-center gap-2 text-md hover:underline text-gray-900 dark:text-gray-200"
               >
                 <a href="#">View More</a>
               </span>
             </div>
-            <div class="grid xl:grid-cols-3 md:grid-cols-2 gap-10">
+            <div class="grid xl:grid-cols-3 md:grid-cols-2 gap-5">
               <div>
                 <img
                   src="https://images.unsplash.com/photo-1513415756790-2ac1db1297d0?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
@@ -198,8 +227,8 @@
                   class="w-full h-[200px] object-cover rounded"
                 />
                 <a href="detail.html">
-                  <h3 class="font-bold mt-2 dark:text-gray-200">
-                    Bahasa Indonesia Menjadi Bahasa Resmi ke-10 di UNIESCO
+                  <h3 class="font-bold mt-2 text-gray-900 dark:text-gray-200">
+                    Pesona Alam Indonesia yang Menarik Minat Wisatawan
                   </h3>
                 </a>
               </div>
@@ -210,7 +239,7 @@
                   class="w-full h-[200px] object-cover rounded"
                 />
                 <a href="detail.html">
-                  <h3 class="font-bold mt-2 dark:text-gray-200">
+                  <h3 class="font-bold mt-2 text-gray-900 dark:text-gray-200">
                     Pertunjukkan Budaya Indonesia Pukau Warga Turki
                   </h3>
                 </a>
@@ -222,7 +251,7 @@
                   class="w-full h-[200px] rounded object-cover"
                 />
                 <a href="detail.html">
-                  <h3 class="font-bold mt-2 dark:text-gray-200">
+                  <h3 class="font-bold mt-2 text-gray-900 dark:text-gray-200">
                     Candi Borobudur Situs Warisan Dunia
                   </h3>
                 </a>
@@ -230,20 +259,20 @@
             </div>
           </div>
           <div
-            class="border border-gray-700 p-7 relative dark:border-gray-800 md:block hidden"
+            class="border border-gray-700 p-7 relative dark:border-gray-400 md:block hidden"
           >
             <div
               class="bg-[#0DCDC2] w-[50px] h-[50px] text-white rounded-md flex items-center justify-center absolute top-0 left-[20px] xl:-translate-y-1/2"
             >
               <i class="fa-solid fa-envelope"></i>
             </div>
-            <h3 class="mb-10 xl:mt-6 mt-12 dark:text-gray-300">
+            <h3 class="mb-10 xl:mt-6 mt-12 text-gray-900 dark:text-gray-200">
               Berlangganan untuk mendapatkan notifikasi saat ada berita baru!
             </h3>
             <p>
               <input
                 type="text"
-                class="px-5 py-2 mb-5 bg-gray-800 dark:bg-gray-700 rounded-md max-w-[10px] md:max-w-[190px] focus:outline-none focus:border-transparent"
+                class="px-5 py-2 mb-5 bg-gray-300 dark:text-gray-100 text-gray-800 dark:bg-gray-700 rounded-md max-w-[10px] md:max-w-[190px] focus:outline-none focus:border-transparent"
                 placeholder="Email..."
               />
               <a
@@ -257,8 +286,8 @@
         </div>
       </section>
 
-      <hr class="my-10 dark:border-gray-100" />
-      <section class="grid xl:grid-cols-4 gap-20 mt-10">
+      <hr class="my-10 border-gray-700 dark:border-gray-100" />
+      <section class="grid xl:grid-cols-4 gap-10 mt-10">
         <div class="xl:col-span-3 md:w-auto w-[95%]">
           <div
             class="md:grid md:grid-cols-5 items-center xl:gap-10 md:gap-5 md:mb-5 mb-16"
@@ -273,12 +302,14 @@
               <p class="text-[#0DCDC2] font-semibold">BUDAYA</p>
 
               <a href="detail.html">
-                <h3 class="text-xl font-bold mb-3 dark:text-gray-200">
+                <h3
+                  class="text-xl font-bold mb-3 text-gray-900 dark:text-gray-200"
+                >
                   Upacara Seren Taun Akan Diadakan Tanggal 10 Juni Mendatang!
                 </h3>
               </a>
               <p
-                class="text-gray-200 dark:text-gray-300 xl:text-base md:text-sm text-[12px]"
+                class="text-gray-800 dark:text-gray-300 xl:text-base md:text-sm text-[12px]"
               >
                 Seren Taun adalah upacara adat panen padi masyarakat Sunda yang
                 dilakukan setiap tahun. Upacara ini berlangsung khidmat dan
@@ -287,13 +318,13 @@
 
               <div class="mt-5 lg:flex gap-10">
                 <p
-                  class="flex md:mb-0 mb-2 md:text-base text-[12px] gap-2 text-sm text-gray-300 dark:text-gray-400 items-center"
+                  class="flex md:mb-0 mb-2 md:text-base text-[12px] gap-2 text-sm text-gray-800 dark:text-gray-400 items-center"
                 >
                   <i class="fa-solid fa-map-location-dot"></i>
                   <span>Cigugur, Kuningan</span>
                 </p>
                 <p
-                  class="flex gap-2 text-sm text-gray-300 dark:text-gray-400 items-center"
+                  class="flex gap-2 text-sm text-gray-800 dark:text-gray-400 items-center"
                 >
                   <i class="fa-regular fa-calendar"></i>
                   <span>10 Juni 2025</span>
@@ -313,12 +344,14 @@
             <div class="md:col-span-3 md:mt-0 mt-3">
               <p class="text-[#0DCDC2] font-semibold uppercase">KULINER</p>
               <a href="detail.html">
-                <h3 class="text-xl font-bold mb-3 dark:text-gray-200">
+                <h3
+                  class="text-xl font-bold mb-3 text-gray-900 dark:text-gray-200"
+                >
                   Festival Kuliner Merdeka
                 </h3>
               </a>
               <p
-                class="text-gray-200 dark:text-gray-300 xl:text-base md:text-sm text-[12px]"
+                class="text-gray-800 dark:text-gray-300 xl:text-base md:text-sm text-[12px]"
               >
                 Ada 20 tenant kuliner yang tersedia dengan pilihan makanan
                 bervariatif. Mulai dari rujak juhi khas Betawi, Pempek Merdeka
@@ -328,13 +361,13 @@
 
               <div class="mt-5 lg:flex gap-10">
                 <p
-                  class="flex md:mb-0 mb-2 md:text-base text-[12px] gap-2 text-sm text-gray-300 dark:text-gray-400 items-center"
+                  class="flex md:mb-0 mb-2 md:text-base text-[12px] gap-2 text-sm text-gray-800 dark:text-gray-400 items-center"
                 >
                   <i class="fa-solid fa-map-location-dot"></i>
-                  <span>Serpong Utara, Tanggerang Selatan</span>
+                  <span>Serpong, Tanggerang Selatan</span>
                 </p>
                 <p
-                  class="flex gap-2 text-sm text-gray-300 dark:text-gray-400 items-center"
+                  class="flex gap-2 text-sm text-gray-800 dark:text-gray-400 items-center"
                 >
                   <i class="fa-regular fa-calendar"></i>
                   <span>17 Agustus 2025</span>
@@ -354,12 +387,14 @@
             <div class="md:col-span-3 md:mt-0 mt-3">
               <p class="text-[#0DCDC2] font-semibold">ALAM</p>
               <a href="detail.html">
-                <h3 class="text-xl font-bold mb-3 dark:text-gray-200">
+                <h3
+                  class="text-xl font-bold mb-3 text-gray-900 dark:text-gray-200"
+                >
                   Curug Leuwi Hejo, Curug dengan Nuansa Alam Memukau
                 </h3>
               </a>
               <p
-                class="text-gray-200 dark:text-gray-300 xl:text-base md:text-sm text-[12px]"
+                class="text-gray-800 dark:text-gray-300 xl:text-base md:text-sm text-[12px]"
               >
                 Dikenal juga sebagai Curug Bengkok, Curug Leuwi Hejo dikenal
                 karena keindahan pemandangan alamnya yang memesona karena aliran
@@ -368,13 +403,13 @@
 
               <div class="mt-5 lg:flex gap-10">
                 <p
-                  class="flex md:mb-0 mb-2 md:text-base text-[12px] gap-2 text-sm text-gray-300 dark:text-gray-400 items-center"
+                  class="flex md:mb-0 mb-2 md:text-base text-[12px] gap-2 text-sm text-gray-800 dark:text-gray-400 items-center"
                 >
                   <i class="fa-solid fa-map-location-dot"></i>
                   <span>Sukamakmur, Bogor</span>
                 </p>
                 <p
-                  class="flex gap-2 text-sm text-gray-300 dark:text-gray-400 items-center"
+                  class="flex gap-2 text-sm text-gray-800 dark:text-gray-400 items-center"
                 >
                   <i class="fa-regular fa-calendar"></i>
                   <span>24 Februari 2025</span>
@@ -383,117 +418,208 @@
             </div>
           </div>
         </div>
-        <div class="xl:block hidden">
-          <img
-            src="/assets/img/IndoWonders.png"
-            alt="iniJabarBanner"
-            class="rounded"
-          />
+        <div class="xl:block hidden w-[245px]">
+          <video
+            class="w-full h-auto rounded-md shadow-lg transition-transform duration-500 hover:scale-100"
+            autoplay
+            muted
+            loop
+          >
+            <source src="assets/img/bannervideo.mp4" type="video/mp4" />
+          </video>
         </div>
       </section>
-      <div class="flex justify-center mt-10 mb-10">
-        <ul class="inline-flex gap-2 -space-x-px text-sm">
-          <li>
-            <i
-              class="fa-solid fa-chevron-left flex items-center justify-center px-3 h-8 leading-tight rounded-md bg-gray-800 hover:bg-[#0DCDC2]/40"
-            ></i>
-          </li>
-          <li>
-            <a
-              href="#"
-              class="flex items-center justify-center px-3 h-8 leading-tight rounded-md text-white bg-[#0DCDC2]"
-              >1</a
-            >
-          </li>
-          <li>
-            <a
-              href="#"
-              class="flex items-center justify-center px-3 h-8 leading-tight rounded-md bg-gray-800 hover:bg-[#0DCDC2]/40"
-              >2</a
-            >
-          </li>
-          <li>
-            <a
-              href="#"
-              class="flex items-center justify-center px-3 h-8 rounded-md bg-gray-800 hover:bg-[#0DCDC2]/40"
-              >3</a
-            >
-          </li>
-          <li>
-            <a
-              href="#"
-              class="flex items-center justify-center px-3 h-8 leading-tight rounded-md bg-gray-800 hover:bg-[#0DCDC2]/40"
-              >4</a
-            >
-          </li>
-          <li>
-            <a
-              href="#"
-              class="flex items-center justify-center px-3 h-8 leading-tight rounded-md bg-gray-800 hover:bg-[#0DCDC2]/40"
-              >5</a
-            >
-          </li>
-          <li>
-            <i
-              class="fa-solid fa-chevron-right flex items-center justify-center px-3 h-8 leading-tight rounded-md bg-gray-800 hover:bg-[#0DCDC2]/40"
-            ></i>
-          </li>
-        </ul>
-      </div>
+      <!--Pagination-->
+      <section>
+        <div class="flex justify-center mt-10 mb-10">
+          <ul class="inline-flex gap-2 -space-x-px text-sm">
+            <li>
+              <i
+                class="fa-solid fa-chevron-left flex items-center justify-center px-3 h-8 leading-tight rounded-md bg-gray-200 text-gray-900 hover:bg-[#0DCDC2]/70 dark:bg-gray-700 dark:text-gray-100 dark:hover:bg-[#0DCDC2]/70"
+              ></i>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="flex items-center justify-center px-3 h-8 leading-tight rounded-md text-white bg-[#0DCDC2]"
+                >1</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="flex items-center justify-center px-3 h-8 leading-tight rounded-md bg-gray-200 text-gray-900 hover:bg-[#0DCDC2]/70 dark:bg-gray-700 dark:text-gray-100 dark:hover:bg-[#0DCDC2]/70"
+                >2</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="flex items-center justify-center px-3 h-8 rounded-md bg-gray-200 text-gray-900 hover:bg-[#0DCDC2]/70 dark:bg-gray-700 dark:text-gray-100 dark:hover:bg-[#0DCDC2]/70"
+                >3</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="flex items-center justify-center px-3 h-8 leading-tight rounded-md bg-gray-200 text-gray-900 hover:bg-[#0DCDC2]/70 dark:bg-gray-700 dark:text-gray-100 dark:hover:bg-[#0DCDC2]/70"
+                >4</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="flex items-center justify-center px-3 h-8 leading-tight rounded-md bg-gray-200 text-gray-900 hover:bg-[#0DCDC2]/70 dark:bg-gray-700 dark:text-gray-100 dark:hover:bg-[#0DCDC2]/70"
+                >5</a
+              >
+            </li>
+            <li>
+              <i
+                class="fa-solid fa-chevron-right flex items-center justify-center px-3 h-8 leading-tight rounded-md bg-gray-200 text-gray-900 hover:bg-[#0DCDC2]/70 dark:bg-gray-700 dark:text-gray-100 dark:hover:bg-[#0DCDC2]/70"
+              ></i>
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
     <!-- Footer Section -->
-    <footer class="bg-gray-900 text-white py-8 container mx-auto">
+    <footer
+      class="bg-slate-100 dark:bg-gray-900 text-white py-8 container mx-auto"
+    >
       <div class="container mx-auto px-6 md:px-12 text-center">
         <!-- Logo and Title -->
         <div class="mb-6">
-          <h1 class="text-3xl font-bold">IndoWonders</h1>
-          <p class="text-gray-400 mt-2">
+          <h1 class="text-3xl font-bold text-gray-900 dark:text-white">
+            IndoWonders
+          </h1>
+          <p class="text-gray-800 dark:text-gray-400 mt-2">
             Exploring Nature, Culture, and Adventure in Indonesia
           </p>
         </div>
 
         <!-- Quick Links -->
         <div
-          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 mb-6"
+          class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 mb-6"
         >
           <div>
-            <h3 class="font-semibold text-lg">Company</h3>
-            <ul class="mt-3 space-y-2 text-gray-400">
-              <li><a href="#" class="hover:text-white">About Us</a></li>
-              <li><a href="#" class="hover:text-white">Careers</a></li>
-              <li><a href="#" class="hover:text-white">Contact</a></li>
+            <h3 class="font-semibold text-lg text-gray-900 dark:text-white">
+              Link
+            </h3>
+            <ul class="mt-3 space-y-2 text-gray-800 dark:text-gray-400">
+              <li>
+                <a
+                  href="about.html"
+                  class="hover:text-[#0DCDC2] dark:hover:text-[#0DCDC2]"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  href="search.html"
+                  class="hover:text-[#0DCDC2] dark:hover:text-[#0DCDC2]"
+                  >Search</a
+                >
+              </li>
+
+              <li>
+                <a
+                  href="informasi.html"
+                  class="hover:text-[#0DCDC2] dark:hover:text-[#0DCDC2]"
+                  >Informasi</a
+                >
+              </li>
             </ul>
           </div>
           <div>
-            <h3 class="font-semibold text-lg">Explore</h3>
-            <ul class="mt-3 space-y-2 text-gray-400">
-              <li><a href="#" class="hover:text-white">Destinations</a></li>
-              <li><a href="#" class="hover:text-white">Tours</a></li>
-              <li><a href="#" class="hover:text-white">Packages</a></li>
+            <h3 class="font-semibold text-lg text-gray-900 dark:text-white">
+              Explore
+            </h3>
+            <ul class="mt-3 space-y-2 text-gray-800 dark:text-gray-400">
+              <li>
+                <a
+                  href="index.html"
+                  class="hover:text-[#0DCDC2] dark:hover:text-[#0DCDC2]"
+                  >Beranda</a
+                >
+              </li>
+              <li>
+                <a
+                  href="kategori.html"
+                  class="hover:text-[#0DCDC2] dark:hover:text-[#0DCDC2]"
+                  >Kategori</a
+                >
+              </li>
+              <li>
+                <a
+                  href="subscription.html"
+                  class="hover:text-[#0DCDC2] dark:hover:text-[#0DCDC2]"
+                  >Subscription</a
+                >
+              </li>
             </ul>
           </div>
           <div>
-            <h3 class="font-semibold text-lg">Support</h3>
-            <ul class="mt-3 space-y-2 text-gray-400">
-              <li><a href="#" class="hover:text-white">Help Center</a></li>
-              <li><a href="#" class="hover:text-white">FAQs</a></li>
-              <li><a href="#" class="hover:text-white">Terms of Service</a></li>
+            <h3 class="font-semibold text-lg text-gray-900 dark:text-white">
+              Support
+            </h3>
+            <ul class="mt-3 space-y-2 text-gray-800 dark:text-gray-400">
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-[#0DCDC2] dark:hover:text-[#0DCDC2]"
+                  >Help Center</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-[#0DCDC2] dark:hover:text-[#0DCDC2]"
+                  >FAQs</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-[#0DCDC2] dark:hover:text-[#0DCDC2]"
+                  >Terms of Service</a
+                >
+              </li>
             </ul>
           </div>
           <div>
-            <h3 class="font-semibold text-lg">Social</h3>
-            <ul class="mt-3 space-y-2 text-gray-400">
-              <li><a href="#" class="hover:text-white">Facebook</a></li>
-              <li><a href="#" class="hover:text-white">Instagram</a></li>
-              <li><a href="#" class="hover:text-white">Twitter</a></li>
+            <h3 class="font-semibold text-lg text-gray-900 dark:text-white">
+              Social
+            </h3>
+            <ul class="mt-3 space-y-2 text-gray-800 dark:text-gray-400">
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-[#0DCDC2] dark:hover:text-[#0DCDC2]"
+                  >Facebook</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-[#0DCDC2] dark:hover:text-[#0DCDC2]"
+                  >Instagram</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-[#0DCDC2] dark:hover:text-[#0DCDC2]"
+                  >Twitter</a
+                >
+              </li>
             </ul>
           </div>
         </div>
 
         <!-- Footer Bottom -->
         <div class="border-t border-[#0DCDC2] pt-4">
-          <p class="text-gray-500 text-sm">
-            &copy; Copyright 2025 | by ALOPE Team
+          <p class="text-gray-900 dark:text-gray-500 text-sm">
+            &copy; Copyright 2025 | by ALOPE Team Universitas Kuningan
           </p>
         </div>
       </div>
@@ -520,6 +646,25 @@
       }
 
       window.addEventListener("scroll", handleScroll);
+
+      const themetoggle = document.getElementById("theme-toggle");
+      const htmlTag = document.querySelector("html");
+      themetoggle.addEventListener("click", function () {
+        htmlTag.classList.toggle("dark");
+      });
+    </script>
+    <script>
+      const menuButton = document.getElementById("menu-toggle");
+      const closeButton = document.getElementById("close-menu");
+      const menu = document.getElementById("menu");
+
+      menuButton.addEventListener("click", () => {
+        menu.style.right = "-100px";
+      });
+
+      closeButton.addEventListener("click", () => {
+        menu.style.right = "-1000000px";
+      });
     </script>
   </body>
 </html>

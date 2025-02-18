@@ -1,10 +1,16 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="id" class="">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>IndoWonders</title>
     <link rel="icon" href="assets/img/logo/logo.png" />
+    <!--font-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
     <!-- SWIPER MIN.CSS -->
     <link rel="stylesheet" href="assets/js/swiper.min.js" />
     <!-- ANIMATE CSS CDN -->
@@ -19,7 +25,7 @@
     <!-- <script src="https://unpkg.com/@tailwindcss/browser@4"></script> -->
     <link href="./src/output.css" rel="stylesheet" />
   </head>
-  <body class="bg-gray-900 text-white">
+  <body class="bg-gray-100 dark:bg-gray-900 font-poppins text-white">
     <!-- Section NAVBAR -->
     <section class="container mx-auto">
       <!-- Header (Navbar) -->
@@ -27,46 +33,67 @@
         class="px-4 py-6 sm:px-6 lg:px-20 w-full fixed top-0 left-0 z-50 transition-all duration-300 ease-in-out"
         id="navbar"
       >
-        <nav class="animate__animated animate__fadeInLeft">
+        <nav class="animate__animated animate__fadeInRight container mx-auto">
           <main class="flex items-center justify-between w-full">
             <!-- Logo and Title -->
             <div class="flex items-center text-white space-x-2">
               <img
-                class="w-14 h-8"
+                class="w-14 h-8 dark:hidden block"
+                src="assets/img/logo/logohijau1.png"
+                alt=""
+              />
+              <img
+                class="w-14 h-8 hidden dark:block"
                 src="assets/img/logo/logowhite1.png"
                 alt=""
               />
-              <h1 class="text-2xl font-semibold">IndoWonders</h1>
+              <h1 class="text-2xl font-semibold text-gray-900 dark:text-white">
+                IndoWonders
+              </h1>
             </div>
 
             <!-- Buttons -->
             <div class="flex items-center space-x-3">
               <button
-                class="bg-gray-100 text-gray-900 hover:text-[#0DCDC2] w-8 h-8 rounded-full flex items-center justify-center"
+                id="theme-toggle"
+                class="bg-gray-900 dark:bg-gray-100 text-gray-900 hover:text-[#0DCDC2] w-8 h-8 rounded-full flex items-center justify-center"
               >
-                <i class="fa-solid fa-moon"></i>
+                <i
+                  class="fa-solid fa-moon text-gray-100 hover:text-[#0DCDC2] dark:text-gray-900 dark:hover:text-[#0DCDC2]"
+                ></i>
               </button>
               <a
                 href="search.html"
-                class="bg-gray-100 text-gray-900 hover:text-[#0DCDC2] w-8 h-8 rounded-full flex items-center justify-center"
+                class="bg-gray-900 dark:bg-gray-100 text-gray-900 hover:text-[#0DCDC2] w-8 h-8 rounded-full flex items-center justify-center"
               >
-                <i class="fa-solid fa-magnifying-glass"></i>
+                <i
+                  class="fa-solid fa-magnifying-glass text-gray-100 hover:text-[#0DCDC2] dark:text-gray-900 dark:hover:text-[#0DCDC2]"
+                ></i>
               </a>
               <div class="group">
                 <button
-                  class="bg-gray-100 text-gray-900 hover:text-[#0DCDC2] w-8 h-8 rounded-full flex items-center justify-center group"
+                  class="bg-gray-900 dark:bg-gray-100 text-gray-900 hover:text-[#0DCDC2] w-8 h-8 rounded-full flex items-center justify-center"
+                  id="menu-toggle"
                 >
-                  <i class="fa-solid fa-bars"></i>
+                  <i
+                    class="fa-solid fa-bars text-gray-100 hover:text-[#0DCDC2] dark:text-gray-900 dark:hover:text-[#0DCDC2]"
+                  ></i>
                 </button>
                 <div
-                  class="bg-gray-900 w-[350px] fixed h-screen -top-10 bottom-0 -right-20 z-50 justify-center items-center group-hover:flex hidden"
+                  id="menu"
+                  class="bg-gray-100 dark:bg-gray-900 flex w-[350px] fixed h-[700px] -top-10 right-[-500px] z-50 justify-center items-center transition-all duration-500 ease-in-out"
                 >
                   <button
-                    class="absolute top-8 right-5 bg-gray-100 rounded-full size-6 block"
+                    id="close-menu"
+                    class="absolute top-5 right-5 bg-gray-900 dark:bg-gray-100 rounded-full size-6"
                   >
-                    <i class="fa-solid fa-xmark text-gray-900 rounded-full"></i>
+                    <i
+                      class="fa-solid fa-xmark text-white hover:text-red-500 dark:text-gray-900 rounded-full dark:hover:text-red-500"
+                    ></i>
                   </button>
-                  <ul class="text-center text-white font-semibold text-xl">
+                  <ul
+                    class="text-center text-gray-900 dark:text-white font-semibold text-xl"
+                  >
                     <li
                       class="mb-3 transition-all duration-300 ease-in-out transform hover:text-[#0DCDC2] hover:scale-105"
                     >
@@ -87,7 +114,6 @@
                     >
                       <a href="kategori.html">Kategori</a>
                     </li>
-
                     <li
                       class="mb-3 transition-all duration-300 ease-in-out transform hover:text-[#0DCDC2] hover:scale-105"
                     >
@@ -114,10 +140,7 @@
           <img src="assets/img/baner.jpg" class="w-full h-full object-cover" />
         </a>
         <div
-          class="absolute inset-0 bg-gradient-to-t from-gray-900 via-transparent to-transparent opacity-100"
-        ></div>
-        <div
-          class="absolute inset-0 bg-gradient-to-b from-gray-900 via-transparent to-transparent opacity-100"
+          class="absolute inset-0 bg-gradient-to-t from-gray-100 dark:from-gray-900 via-transparent to-transparent opacity-100"
         ></div>
       </div>
 
@@ -126,7 +149,7 @@
         class="absolute inset-0 flex flex-col justify-center items-center text-center text-white px-4 py-6 md:p-12"
       >
         <h2
-          class="font-display font-bold text-4xl md:text-5xl lg:text-6xl mb-6"
+          class="font-display font-bold text-4xl md:text-5xl lg:text-6xl mb-6 pt-12"
         >
           Kenapa Harus Ber-Libur <br />
           Di Indonesia ?
@@ -139,7 +162,7 @@
         <!-- Card 1 -->
         <div class="relative">
           <span
-            class="absolute text-[120px] font-bold text-gray-300 opacity-10 -top-4 -left-4"
+            class="absolute text-[120px] font-bold text-gray-700 dark:text-gray-300 opacity-10 -top-4 -left-4"
             >01</span
           >
           <div class="flex items-center mb-50 gap-3">
@@ -150,9 +173,11 @@
               Tentang Alam
             </p>
           </div>
-          <h2 class="text-3xl font-bold mt-2">Keindahan Alam Yang Memikat</h2>
+          <h2 class="text-gray-900 dark:text-white text-3xl font-bold mt-2">
+            Keindahan Alam Yang Memikat
+          </h2>
           <p
-            class="read-more-text text-gray-300 text-md mt-4 leading-relaxed text-justify"
+            class="read-more-text text-gray-800 dark:text-gray-300 text-md mt-4 leading-relaxed text-justify"
             style="
               max-height: 235px;
               overflow: hidden;
@@ -178,14 +203,14 @@
           </p>
           <a
             href="#"
-            class="read-more-btn inline-block mt-2 text-[#0DCDC2] font-medium text-md hover:text-white"
+            class="read-more-btn inline-block mt-2 text-[#0DCDC2] font-medium text-md hover:text-gray-800 dark:hover:text-white"
             >Read more →</a
           >
         </div>
 
         <div>
           <img
-            src="assets/img/activities/alam.jpg"
+            src="assets/img/gallery/8.jpg"
             alt="Hiking"
             class="max-w-full rounded-lg shadow-lg h-[550px] w-full object-cover"
           />
@@ -201,7 +226,7 @@
         </div>
         <div class="relative">
           <span
-            class="absolute text-[120px] font-bold text-gray-300 opacity-10 -top-4 -left-4"
+            class="absolute text-[120px] font-bold text-gray-700 dark:text-gray-300 opacity-10 -top-4 -left-4"
             >02</span
           >
           <div class="flex items-center mb-50 gap-3">
@@ -212,9 +237,11 @@
               Tentang Budaya
             </p>
           </div>
-          <h2 class="text-3xl font-bold mt-2">Keanekaragaman Budaya</h2>
+          <h2 class="text-3xl font-bold mt-2 text-gray-900 dark:text-white">
+            Keanekaragaman Budaya
+          </h2>
           <p
-            class="read-more-text text-gray-300 text-md mt-4 leading-relaxed text-justify"
+            class="read-more-text text-gray-800 dark:text-gray-300 text-md mt-4 leading-relaxed text-justify"
             style="
               max-height: 235px;
               overflow: hidden;
@@ -240,7 +267,7 @@
           </p>
           <a
             href="#"
-            class="read-more-btn inline-block mt-2 text-[#0DCDC2] font-medium text-md hover:text-white"
+            class="read-more-btn inline-block mt-2 text-[#0DCDC2] font-medium text-md hover:text-gray-800 dark:hover:text-white"
             >Read more →</a
           >
         </div>
@@ -248,7 +275,7 @@
         <!-- Card 3 -->
         <div class="relative">
           <span
-            class="absolute text-[120px] font-bold text-gray-300 opacity-10 -top-4 -left-4"
+            class="absolute text-[120px] font-bold text-gray-700 dark:text-gray-300 opacity-10 -top-4 -left-4"
             >03</span
           >
           <div class="flex items-center mb-50 gap-3">
@@ -259,9 +286,11 @@
               Tentang Kuliner
             </p>
           </div>
-          <h2 class="text-3xl font-bold mt-2">Kuliner Yang Lezat</h2>
+          <h2 class="text-3xl font-bold mt-2 text-gray-900 dark:text-white">
+            Kuliner Yang Lezat
+          </h2>
           <p
-            class="read-more-text text-gray-300 text-md mt-4 leading-relaxed text-justify"
+            class="read-more-text text-gray-800 dark:text-gray-300 text-md mt-4 leading-relaxed text-justify"
             style="
               max-height: 235px;
               overflow: hidden;
@@ -288,7 +317,7 @@
           </p>
           <a
             href="#"
-            class="read-more-btn inline-block mt-2 text-[#0DCDC2] font-medium text-md hover:text-white"
+            class="read-more-btn inline-block mt-2 text-[#0DCDC2] font-medium text-md hover:text-gray-800 dark:hover:text-white"
             >Read more →</a
           >
         </div>
@@ -303,58 +332,143 @@
     </section>
 
     <!-- Footer Section -->
-    <footer class="bg-gray-900 text-white py-8 container mx-auto">
+    <footer
+      class="bg-slate-100 dark:bg-gray-900 text-white py-8 container mx-auto"
+    >
       <div class="container mx-auto px-6 md:px-12 text-center">
         <!-- Logo and Title -->
         <div class="mb-6">
-          <h1 class="text-3xl font-bold">IndoWonders</h1>
-          <p class="text-gray-400 mt-2">
+          <h1 class="text-3xl font-bold text-gray-900 dark:text-white">
+            IndoWonders
+          </h1>
+          <p class="text-gray-800 dark:text-gray-400 mt-2">
             Exploring Nature, Culture, and Adventure in Indonesia
           </p>
         </div>
 
         <!-- Quick Links -->
         <div
-          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 mb-6"
+          class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 mb-6"
         >
           <div>
-            <h3 class="font-semibold text-lg">Company</h3>
-            <ul class="mt-3 space-y-2 text-gray-400">
-              <li><a href="#" class="hover:text-white">About Us</a></li>
-              <li><a href="#" class="hover:text-white">Careers</a></li>
-              <li><a href="#" class="hover:text-white">Contact</a></li>
+            <h3 class="font-semibold text-lg text-gray-900 dark:text-white">
+              Link
+            </h3>
+            <ul class="mt-3 space-y-2 text-gray-800 dark:text-gray-400">
+              <li>
+                <a
+                  href="about.html"
+                  class="hover:text-[#0DCDC2] dark:hover:text-[#0DCDC2]"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  href="search.html"
+                  class="hover:text-[#0DCDC2] dark:hover:text-[#0DCDC2]"
+                  >Search</a
+                >
+              </li>
+
+              <li>
+                <a
+                  href="informasi.html"
+                  class="hover:text-[#0DCDC2] dark:hover:text-[#0DCDC2]"
+                  >Informasi</a
+                >
+              </li>
             </ul>
           </div>
           <div>
-            <h3 class="font-semibold text-lg">Explore</h3>
-            <ul class="mt-3 space-y-2 text-gray-400">
-              <li><a href="#" class="hover:text-white">Destinations</a></li>
-              <li><a href="#" class="hover:text-white">Tours</a></li>
-              <li><a href="#" class="hover:text-white">Packages</a></li>
+            <h3 class="font-semibold text-lg text-gray-900 dark:text-white">
+              Explore
+            </h3>
+            <ul class="mt-3 space-y-2 text-gray-800 dark:text-gray-400">
+              <li>
+                <a
+                  href="index.html"
+                  class="hover:text-[#0DCDC2] dark:hover:text-[#0DCDC2]"
+                  >Beranda</a
+                >
+              </li>
+              <li>
+                <a
+                  href="kategori.html"
+                  class="hover:text-[#0DCDC2] dark:hover:text-[#0DCDC2]"
+                  >Kategori</a
+                >
+              </li>
+              <li>
+                <a
+                  href="subscription.html"
+                  class="hover:text-[#0DCDC2] dark:hover:text-[#0DCDC2]"
+                  >Subscription</a
+                >
+              </li>
             </ul>
           </div>
           <div>
-            <h3 class="font-semibold text-lg">Support</h3>
-            <ul class="mt-3 space-y-2 text-gray-400">
-              <li><a href="#" class="hover:text-white">Help Center</a></li>
-              <li><a href="#" class="hover:text-white">FAQs</a></li>
-              <li><a href="#" class="hover:text-white">Terms of Service</a></li>
+            <h3 class="font-semibold text-lg text-gray-900 dark:text-white">
+              Support
+            </h3>
+            <ul class="mt-3 space-y-2 text-gray-800 dark:text-gray-400">
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-[#0DCDC2] dark:hover:text-[#0DCDC2]"
+                  >Help Center</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-[#0DCDC2] dark:hover:text-[#0DCDC2]"
+                  >FAQs</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-[#0DCDC2] dark:hover:text-[#0DCDC2]"
+                  >Terms of Service</a
+                >
+              </li>
             </ul>
           </div>
           <div>
-            <h3 class="font-semibold text-lg">Social</h3>
-            <ul class="mt-3 space-y-2 text-gray-400">
-              <li><a href="#" class="hover:text-white">Facebook</a></li>
-              <li><a href="#" class="hover:text-white">Instagram</a></li>
-              <li><a href="#" class="hover:text-white">Twitter</a></li>
+            <h3 class="font-semibold text-lg text-gray-900 dark:text-white">
+              Social
+            </h3>
+            <ul class="mt-3 space-y-2 text-gray-800 dark:text-gray-400">
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-[#0DCDC2] dark:hover:text-[#0DCDC2]"
+                  >Facebook</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-[#0DCDC2] dark:hover:text-[#0DCDC2]"
+                  >Instagram</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-[#0DCDC2] dark:hover:text-[#0DCDC2]"
+                  >Twitter</a
+                >
+              </li>
             </ul>
           </div>
         </div>
 
         <!-- Footer Bottom -->
         <div class="border-t border-[#0DCDC2] pt-4">
-          <p class="text-gray-500 text-sm">
-            &copy; Copyright 2025 | by ALOPE Team
+          <p class="text-gray-900 dark:text-gray-500 text-sm">
+            &copy; Copyright 2025 | by ALOPE Team Universitas Kuningan
           </p>
         </div>
       </div>
@@ -381,6 +495,12 @@
       }
 
       window.addEventListener("scroll", handleScroll);
+
+      const themetoggle = document.getElementById("theme-toggle");
+      const htmlTag = document.querySelector("html");
+      themetoggle.addEventListener("click", function () {
+        htmlTag.classList.toggle("dark");
+      });
     </script>
     <script>
       document.addEventListener("DOMContentLoaded", function () {
@@ -401,6 +521,19 @@
             }
           });
         });
+      });
+    </script>
+    <script>
+      const menuButton = document.getElementById("menu-toggle");
+      const closeButton = document.getElementById("close-menu");
+      const menu = document.getElementById("menu");
+
+      menuButton.addEventListener("click", () => {
+        menu.style.right = "-100px";
+      });
+
+      closeButton.addEventListener("click", () => {
+        menu.style.right = "-1000000px";
       });
     </script>
   </body>
